@@ -7,7 +7,7 @@ ng () {
 }
 res=0
 out=$(printf "1 2 3\n1 2 3\n1" |./kadai)
-[ "${out}" = 1 ] || ng "$LINENO"
+[ "${out}" = "1.0 0.0" ] || ng "$LINENO"
 [ "${res}" = 0 ] && echo OK
 out=$(printf "1 2 \n1 2 3\n1" |./kadai)
 [ "$?" = 1 ]      || ng "$LINENO" 
