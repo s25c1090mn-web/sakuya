@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2026 Sakuya Fukui
+# SPDX-License-Identifier: BSD-3-Clause
+import numpy as np
+import sys
+i=0
+j=0
+k=0
+K="a,b,c,d,e,f,g"
+A = [list(map(float, line.split())) for line in sys.stdin]
+#if len(A[0])!=len(A[1]):
+A[-1] = list(map(int, A[-1]))
+N = A[-1][0]
+B = [[0 for _ in range(N+1)] for _ in range(N+1)]
+C=[0 for _ in range(N+1)]
+T=[0 for _ in range(N+1)]
+for j in range(N+1):
+ for i in range(N+1):
+  for k in range(len(A[0])):
+   B[i][j]+=(A[0][k])**(2*N-j-i)
+   
+for i in range(N+1):
+  for j in range(len(A[0])):
+   T[i]+=((A[0][j])**(N-i))*(A[1][j]) 
+C=np.linalg.solve(B, T)
+for i in range(N+1):
+ if -10**(-5)<C[i]<10**(-5):
+  C[i]=0
+print(*(round(c, 5) for c in C))
+   
