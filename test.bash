@@ -12,6 +12,7 @@ out=$(printf "1 2 3\n1 2 3\n1" |./minimum-sqare-law)
 out=$(printf "1 2 \n1 2 3\n1" |./minimum-sqare-law)
 [ "$?" = 1 ]      || ng "$LINENO" 
 [ "${out}" = "" ] || ng "$LINENO" 
+echo $?
 out=$(echo あ |./minimum-sqare-law)           
 [ "$?" = 1 ]      || ng "$LINENO" 
 [ "${out}" = "" ] || ng "$LINENO" 

@@ -8,7 +8,8 @@ j=0
 k=0
 K="a,b,c,d,e,f,g"
 A = [list(map(float, line.split())) for line in sys.stdin]
-#if len(A[0])!=len(A[1]):
+if len(A[0]) != len(A[1]):
+    sys.exit(1)
 A[-1] = list(map(int, A[-1]))
 N = A[-1][0]
 B = [[0 for _ in range(N+1)] for _ in range(N+1)]
