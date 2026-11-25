@@ -6,19 +6,19 @@ ng () {
         res=1
 }
 res=0
-out=$(printf "1 2 3\n1 2 3\n1" |./kadai)
+out=$(printf "1 2 3\n1 2 3\n1" |./minimum-sqare-law)
 [ "${out}" = "1.0 0.0" ] || ng "$LINENO"
 [ "${res}" = 0 ] && echo OK
-out=$(printf "1 2 \n1 2 3\n1" |./kadai)
+out=$(printf "1 2 \n1 2 3\n1" |./minimum-sqare-law)
 [ "$?" = 1 ]      || ng "$LINENO" 
 [ "${out}" = "" ] || ng "$LINENO" 
-out=$(echo あ | ./kadai)           
+out=$(echo あ ||./minimum-sqare-law)           
 [ "$?" = 1 ]      || ng "$LINENO" 
 [ "${out}" = "" ] || ng "$LINENO" 
-out=$(echo a | ./kadai)          
+out=$(echo a ||./minimum-sqare-law)          
 [ "$?" = 1 ]      || ng "$LINENO" 
 [ "${out}" = "" ] || ng "$LINENO"
-out=$(echo | ./kadai)           
+out=$(echo ||./minimum-sqare-law)           
 [ "$?" = 1 ]      || ng "$LINENO" 
 [ "${out}" = "" ] || ng "$LINENO" 
 [ "${res}" = 0 ] && echo OK
