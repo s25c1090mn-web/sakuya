@@ -19,6 +19,7 @@ sudo apt install python3-numpy
 ```
 
 ## 実行方法
+以下実行方法の例です。
 ```bash
 printf"1 2 3\n1 2 3\n1" | ./minimum-sqare-law
 ```
