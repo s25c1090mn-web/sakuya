@@ -5,11 +5,20 @@
 - ubuntu24.04
 - python3
 ## セットアップ
+```bash
+git clone https://github.com/s25c1090mn-web/sakuya.git
+cd sakuya
+```
 このプログラムではNumPyを使用します。<br>
 以下のコマンドでインストールしてください。
+
 ```bash
 sudo apt update
 sudo apt install python3-numpy
+```
+
 ## 実行方法
-printf"1 2 3\n1 2 3\n1" | ./minimum-sqare-lawのように実行します。
+```bash
+printf"1 2 3\n1 2 3\n1" | ./minimum-sqare-law
+```
 printfの中身は左から順番にx座標の点,y座標の点,求めたい関数の次数です。改行コード\nでx,y,次数それぞれを区切っています。
