@@ -21,4 +21,5 @@ sudo apt install python3-numpy
 ```bash
 printf"1 2 3\n1 2 3\n1" | ./minimum-sqare-law
 ```
-printfの中身は左から順番にx座標の点,y座標の点,求めたい関数の次数です。改行コード\nでx,y,次数それぞれを区切っています。
+printfの中身は左から順番にx座標の点,y座標の点,求めたい関数の次数です。<br>
+改行コード\nでx,y,次数それぞれを区切っています。
