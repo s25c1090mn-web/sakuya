@@ -2,8 +2,9 @@
 このコマンドはx,yの座標を2個以上入力すると最小値二乗法に基づく、n次関数の係数を決定するものです。
 2つ以上の座標を入力し、求めたい関数の次数nを入力することで求めることができます。
 ## 実行環境
-- ubuntu24.04
-- python3
+- ubuntu24.04LTS
+- python
+   - 3.10~3.14
 ## セットアップ
 ```bash
 git clone https://github.com/s25c1090mn-web/sakuya.git
