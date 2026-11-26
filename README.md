@@ -8,8 +8,8 @@ python3
 ## セットアップ
 このプログラムではNumPyを使用します。
 以下のコマンドで、NumPyをインストールしてください
-~sudo apt update~
-~sudo apt install python3-numpy~
+$sudo apt update
+$sudo apt install python3-numpy
 ## 実行方法
 printf"1 2 3\n1 2 3\n1" | ./minimum-sqare-lawのように実行します。
 printfの中身は左から順番にx座標の点,y座標の点,求めたい関数の次数です。改行コード\nでx,y,次数それぞれを区切っています。
